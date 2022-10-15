@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.es7.demoes7.mapper.WordHistoryMapper">
+
+    <resultMap id="BaseResultMap" type="com.es7.demoes7.entity.WordHistory">
+            <result property="words" column="WORDS" jdbcType="VARCHAR"/>
+            <result property="createdBy" column="CREATED_BY" jdbcType="VARCHAR"/>
+            <result property="createdTime" column="CREATED_TIME" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        WORDS,CREATED_BY,CREATED_TIME
+    </sql>
+</mapper>

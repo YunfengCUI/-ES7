@@ -81,7 +81,19 @@
             <artifactId>poi-ooxml</artifactId>
             <version>3.17</version>
         </dependency>
-
+<!--mysql连接-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+            <version>8.0.28</version>
+        </dependency>
+<!--        mybatis-plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.5.2</version>
+        </dependency>
 </dependencies>
 
     <build>

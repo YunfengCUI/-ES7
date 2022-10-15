@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.es7.demoes7.mapper.NewsAbnpMapper">
+
+    <resultMap id="BaseResultMap" type="com.es7.demoes7.entity.NewsAbnp">
+            <id property="uuid" column="UUID" jdbcType="VARCHAR"/>
+            <result property="source" column="SOURCE" jdbcType="VARCHAR"/>
+            <result property="title" column="TITLE" jdbcType="VARCHAR"/>
+            <result property="content" column="CONTENT" jdbcType="VARCHAR"/>
+            <result property="publishTime" column="PUBLISH_TIME" jdbcType="TIMESTAMP"/>
+            <result property="type" column="TYPE" jdbcType="VARCHAR"/>
+            <result property="createdBy" column="CREATED_BY" jdbcType="VARCHAR"/>
+            <result property="createdTime" column="CREATED_TIME" jdbcType="TIMESTAMP"/>
+            <result property="updatedBy" column="UPDATED_BY" jdbcType="VARCHAR"/>
+            <result property="updatedTime" column="UPDATED_TIME" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        UUID,SOURCE,TITLE,
+        CONTENT,PUBLISH_TIME,TYPE,
+        CREATED_BY,CREATED_TIME,UPDATED_BY,
+        UPDATED_TIME
+    </sql>
+</mapper>
